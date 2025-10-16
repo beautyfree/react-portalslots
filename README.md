@@ -1,4 +1,5 @@
 <p align="center">
+    <img width="20%" src=".github/assets/logo.png" alt="react-portalslots" />
   <h1 align="center">react-portalslots</h1>
 </p>
 <p align="center">
