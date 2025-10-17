@@ -1,2 +1,2 @@
-export { PortalSlot } from './PortalSlots'
+export { PortalSlot } from './PortalSlot'
 export { PortalSlotsProvider } from './PortalSlotsProvider'

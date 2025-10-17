@@ -51,7 +51,7 @@ export function PortalSlot(name = 'portal') {
       () => portalSlots.get(id),
       () => undefined
     )
-
+  
     if (!slot) return null
     return createPortal(children, slot)
   }

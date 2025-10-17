@@ -7,9 +7,9 @@ Tiny React Portal slots (Provider + named Slot & Portal factory).
 </p>
 <div align="center">
 
-[![npm downloads](https://img.shields.io/npm/dm/react-portalslots.svg?style=flat-round)](https://www.npmjs.com/package/react-portalslots)
-[![NPM Version](https://badgen.net/npm/v/react-portalslots)](https://www.npmjs.com/package/react-portalslots)
-[![License](https://img.shields.io/npm/l/react-portalslots?style=flat)](https://github.com/beautyfree/react-portalslots/blob/main/LICENSE)
+[![npm downloads](https://img.shields.io/npm/dm/react-portalslots.svg?style=flat-round&v=1)](https://www.npmjs.com/package/react-portalslots)
+[![NPM Version](https://badgen.net/npm/v/react-portalslots?v=1)](https://www.npmjs.com/package/react-portalslots)
+[![License](https://img.shields.io/npm/l/react-portalslots?style=flat&v=1)](https://github.com/beautyfree/react-portalslots/blob/main/LICENSE)
 
 </div>
 
