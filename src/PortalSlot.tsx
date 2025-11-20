@@ -41,7 +41,7 @@ export function PortalSlot(name = 'portal') {
     return (
       <div
         ref={slotRef}
-        className={`portal-slotportal-slot-${name} ${className}`.trim()}
+        className={`react-portalslots-slot ${name} ${className}`.trim()}
         {...props}
       >
         {children}
