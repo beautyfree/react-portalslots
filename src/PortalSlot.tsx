@@ -23,7 +23,8 @@ export function PortalSlot(name = 'portal') {
   const Slot = function Slot({
     children,
     className = '',
-  }: PropsWithChildren<{ className?: string }>) {
+    ...props
+  }: PropsWithChildren<React.HTMLAttributes<HTMLDivElement>>) {
     const slotRef = useRef<HTMLDivElement>(null)
     const portalSlots = usePortalSlots()
 
@@ -38,7 +39,11 @@ export function PortalSlot(name = 'portal') {
     }, [portalSlots])
 
     return (
-      <div className={`portal-slotportal-slot-${name} ${className}`.trim()} ref={slotRef}>
+      <div
+        ref={slotRef}
+        className={`portal-slotportal-slot-${name} ${className}`.trim()}
+        {...props}
+      >
         {children}
       </div>
     )
@@ -51,7 +56,7 @@ export function PortalSlot(name = 'portal') {
       () => portalSlots.get(id),
       () => undefined
     )
-  
+
     if (!slot) return null
     return createPortal(children, slot)
   }
