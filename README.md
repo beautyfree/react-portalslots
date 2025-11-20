@@ -38,12 +38,13 @@ bun add react-portalslots
 ## Usage
 
 ```tsx
+import type { PropsWithChildren } from 'react';
 import { PortalSlotsProvider, PortalSlot } from 'react-portalslots';
 
 const HeaderPortal = PortalSlot('header');
 const FooterPortal = PortalSlot('footer');
 
-function Layout({ children }: { children: React.ReactNode }) {
+function Layout({ children }: PropsWithChildren) {
   return (
     <div className="page">
       <header className="page-header">
@@ -82,15 +83,14 @@ export function App() {
 ## Without this library
 
 ```tsx
-import React from 'react';
+import type { PropsWithChildren, ReactNode } from 'react';
 
 type LayoutProps = {
-  header?: React.ReactNode;
-  footer?: React.ReactNode;
-  children: React.ReactNode;
+  header?: ReactNode;
+  footer?: ReactNode;
 };
 
-function Layout({ header, footer, children }: LayoutProps) {
+function Layout({ header, footer, children }: PropsWithChildren<LayoutProps>) {
   return (
     <div className="page">
       <header className="page-header">{header}</header>
